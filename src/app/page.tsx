@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleMinimal from '@/components/navbar/NavbarStyleMinimal';
@@ -8,7 +8,7 @@ import FeatureCardFive from '@/components/sections/feature/FeatureCardFive';
 import TestimonialCardTwo from '@/components/sections/testimonial/TestimonialCardTwo';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
-import { BarChart, Building, Clock, Headphones, Target, TrendingUp, Users, Workflow, Zap } from "lucide-react";
+import { BarChart, Building, Clock, Headphones, Target, TrendingUp, Users, Workflow, Zap, MessageSquare, Mail } from "lucide-react";
 
 export default function Home() {
   return (
@@ -122,7 +122,7 @@ export default function Home() {
           title="What Our Clients Say"
           description="Real feedback from companies who trust StaffToday"
           tag="Testimonials"
-          tagIcon="MessageSquare"
+          tagIcon={MessageSquare}
           textboxLayout="default"
           animationType="slide-up"
           testimonials={[
@@ -157,7 +157,7 @@ export default function Home() {
       <div id="contact" data-section="contact">
         <ContactSplit
           tag="Get Started"
-          tagIcon="Mail"
+          tagIcon={Mail}
           title="Ready to Transform Your Staffing?"
           description="Join hundreds of companies who trust StaffToday for their staffing needs. Get started today and experience the difference."
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_359Uh0VXrxxSKLlnHl6PZg7ckgh/uploaded-1763461744253-58a7r0ku.jpg"
